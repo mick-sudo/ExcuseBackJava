@@ -4,17 +4,21 @@ Lancer l'application.
 
 Lancer Postman
 
-Ajouter le Json avec Post:
-http://localhost:8080/api/v1/save
+- Ajouter l’ensemble des datas d’excuses:
+    Endpoint: http://localhost:8080/api/v1/saveAll
+    Method: POST(data.json)
 
-Ajouter une excuse avec post:
-http://localhost:8080/api/v1/save
-
+- Ajouter une excuse:
+    Endpoint: http://localhost:8080/api/v1/save
+    Method: POST
     {
         "http_code": 900,
         "tag": "test",
         "message": "nouveau"
     }
-    
-  Regarder les données avec Get:
-  http://localhost:8080/api/v1/allExcuses
+
+
+- Lire les données:
+    Endpoint:  http://localhost:8080/api/v1/allExcuses
+    Regarder les données avec Get:
+    Method: GET
